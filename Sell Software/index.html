@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Software - Software Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Software Marketplace</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="sell.html">Sell Software</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="sell-form">
+        <div class="container">
+            <h2>Sell Your Software</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="price">Price ($):</label>
+                <input type="number" id="price" name="price" min="0" step="0.01" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="business">Business Tools</option>
+                    <option value="productivity">Productivity Apps</option>
+                    <option value="design">Design Software</option>
+                    <!-- Add more categories as needed -->
+                </select>
+
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" accept=".zip,.rar,application/octet-stream,application/zip,application/x-zip-compressed" required>
+
+                <button type="submit" class="btn-primary">Submit Listing</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="sell.html">Sell Software</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Software Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #333;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.features {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.features .feature {
+    margin-bottom: 2rem;
+}
+
+.features .feature h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.features .feature p {
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ccc;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .btn-primary {
+        padding: 0.7rem 1.5rem;
+    }
+}
